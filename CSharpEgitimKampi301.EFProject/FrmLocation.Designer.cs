@@ -37,19 +37,19 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnList = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtId = new System.Windows.Forms.RichTextBox();
+            this.txtCity = new System.Windows.Forms.RichTextBox();
+            this.txtPrice = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.txtDayNight = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.richTextBox6 = new System.Windows.Forms.RichTextBox();
+            this.nudCapacity = new System.Windows.Forms.NumericUpDown();
+            this.txtCountry = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbGuide = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCapacity)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGetById
@@ -75,6 +75,7 @@
             this.btnUpdate.TabIndex = 23;
             this.btnUpdate.Text = "Guncelle";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -87,6 +88,7 @@
             this.btnDelete.TabIndex = 22;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -99,6 +101,7 @@
             this.btnAdd.TabIndex = 21;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label3
             // 
@@ -127,6 +130,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(959, 625);
             this.dataGridView1.TabIndex = 16;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnList
             // 
@@ -151,30 +155,33 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Lokasyon Id:";
             // 
-            // richTextBox3
+            // txtId
             // 
-            this.richTextBox3.Location = new System.Drawing.Point(144, 49);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(228, 22);
-            this.richTextBox3.TabIndex = 27;
-            this.richTextBox3.Text = "";
-            this.richTextBox3.TextChanged += new System.EventHandler(this.richTextBox3_TextChanged);
+            this.txtId.AccessibleName = "";
+            this.txtId.Location = new System.Drawing.Point(144, 49);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(228, 22);
+            this.txtId.TabIndex = 27;
+            this.txtId.Text = "";
+            this.txtId.TextChanged += new System.EventHandler(this.richTextBox3_TextChanged);
             // 
-            // richTextBox4
+            // txtCity
             // 
-            this.richTextBox4.Location = new System.Drawing.Point(144, 91);
-            this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(228, 22);
-            this.richTextBox4.TabIndex = 28;
-            this.richTextBox4.Text = "";
+            this.txtCity.AccessibleName = "txtCity";
+            this.txtCity.Location = new System.Drawing.Point(144, 91);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(228, 22);
+            this.txtCity.TabIndex = 28;
+            this.txtCity.Text = "";
             // 
-            // richTextBox1
+            // txtPrice
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(144, 183);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(228, 22);
-            this.richTextBox1.TabIndex = 30;
-            this.richTextBox1.Text = "";
+            this.txtPrice.AccessibleName = "";
+            this.txtPrice.Location = new System.Drawing.Point(144, 183);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(228, 22);
+            this.txtPrice.TabIndex = 30;
+            this.txtPrice.Text = "";
             // 
             // label4
             // 
@@ -185,18 +192,19 @@
             this.label4.TabIndex = 29;
             this.label4.Text = "Fiyat:";
             // 
-            // richTextBox2
+            // txtDayNight
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(144, 221);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(228, 22);
-            this.richTextBox2.TabIndex = 32;
-            this.richTextBox2.Text = "";
+            this.txtDayNight.AccessibleName = "";
+            this.txtDayNight.Location = new System.Drawing.Point(144, 255);
+            this.txtDayNight.Name = "txtDayNight";
+            this.txtDayNight.Size = new System.Drawing.Size(228, 22);
+            this.txtDayNight.TabIndex = 32;
+            this.txtDayNight.Text = "";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(56, 227);
+            this.label5.Location = new System.Drawing.Point(56, 261);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 16);
             this.label5.TabIndex = 31;
@@ -205,27 +213,29 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(74, 269);
+            this.label6.Location = new System.Drawing.Point(74, 220);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 16);
             this.label6.TabIndex = 33;
             this.label6.Text = "Rehber";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // numericUpDown1
+            // nudCapacity
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(144, 155);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown1.TabIndex = 35;
+            this.nudCapacity.AccessibleName = "";
+            this.nudCapacity.Location = new System.Drawing.Point(144, 155);
+            this.nudCapacity.Name = "nudCapacity";
+            this.nudCapacity.Size = new System.Drawing.Size(120, 22);
+            this.nudCapacity.TabIndex = 35;
             // 
-            // richTextBox6
+            // txtCountry
             // 
-            this.richTextBox6.Location = new System.Drawing.Point(144, 119);
-            this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(228, 22);
-            this.richTextBox6.TabIndex = 37;
-            this.richTextBox6.Text = "";
+            this.txtCountry.AccessibleName = "";
+            this.txtCountry.Location = new System.Drawing.Point(144, 119);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.Size = new System.Drawing.Size(228, 22);
+            this.txtCountry.TabIndex = 37;
+            this.txtCountry.Text = "";
             // 
             // label7
             // 
@@ -237,30 +247,31 @@
             this.label7.Text = "Ülke:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // comboBox1
+            // cmbGuide
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(143, 269);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(229, 24);
-            this.comboBox1.TabIndex = 38;
+            this.cmbGuide.AccessibleName = "";
+            this.cmbGuide.FormattingEnabled = true;
+            this.cmbGuide.Location = new System.Drawing.Point(144, 220);
+            this.cmbGuide.Name = "cmbGuide";
+            this.cmbGuide.Size = new System.Drawing.Size(228, 24);
+            this.cmbGuide.TabIndex = 38;
             // 
             // FrmLocation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1468, 681);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.richTextBox6);
+            this.Controls.Add(this.cmbGuide);
+            this.Controls.Add(this.txtCountry);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.nudCapacity);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.txtDayNight);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.richTextBox4);
-            this.Controls.Add(this.richTextBox3);
+            this.Controls.Add(this.txtCity);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnGetById);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
@@ -272,8 +283,9 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmLocation";
             this.Text = "FrmLocation";
+            this.Load += new System.EventHandler(this.FrmLocation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCapacity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,16 +302,16 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox3;
-        private System.Windows.Forms.RichTextBox richTextBox4;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox txtId;
+        private System.Windows.Forms.RichTextBox txtCity;
+        private System.Windows.Forms.RichTextBox txtPrice;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox txtDayNight;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.RichTextBox richTextBox6;
+        private System.Windows.Forms.NumericUpDown nudCapacity;
+        private System.Windows.Forms.RichTextBox txtCountry;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbGuide;
     }
 }
