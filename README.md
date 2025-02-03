@@ -31,3 +31,6 @@ Bu proje, lokasyon ve rehber bilgilerini yönetmek için geliştirilmiş bir uyg
 - **Where()**:  Belirli bir koşula uyan kayıtları filtreler.
 - **Select()**: Belirli sütunları veya özellikleri projeksiyon yaparak seçer.
 
+
+
+![123](https://github.com/user-attachments/assets/e05617b7-1570-4515-89c0-8b7db0cd8a6f)
