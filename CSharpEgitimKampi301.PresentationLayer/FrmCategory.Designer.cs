@@ -68,6 +68,7 @@
             btnlist.TabIndex = 2;
             btnlist.Text = "Listele";
             btnlist.UseVisualStyleBackColor = true;
+            btnlist.Click += btnlist_Click;
             // 
             // dataGridView1
             // 
@@ -133,6 +134,7 @@
             btnadd.TabIndex = 9;
             btnadd.Text = "Ekle";
             btnadd.UseVisualStyleBackColor = true;
+            btnadd.Click += btnadd_Click;
             // 
             // btnDelete
             // 
@@ -142,6 +144,7 @@
             btnDelete.TabIndex = 10;
             btnDelete.Text = "Sil";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnUpdate
             // 
@@ -151,6 +154,7 @@
             btnUpdate.TabIndex = 11;
             btnUpdate.Text = "Guncelle";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnId
             // 
@@ -160,6 +164,7 @@
             btnId.TabIndex = 12;
             btnId.Text = "Id`ye Gore Getir";
             btnId.UseVisualStyleBackColor = true;
+            btnId.Click += btnId_Click;
             // 
             // FrmCategory
             // 
