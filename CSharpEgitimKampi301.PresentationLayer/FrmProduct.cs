@@ -1,4 +1,5 @@
-﻿using CSharpEgitimKampi301.BussinesLayer.Concrete;
+﻿using CSharpEgitimKampi301.BussinesLayer.Abstract;
+using CSharpEgitimKampi301.BussinesLayer.Concrete;
 using CSharpEgitimKampi301.DataAccesLayer.EntityFramework;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace CSharpEgitimKampi301.PresentationLayer
     public partial class FrmProduct : Form
     { 
 
-        private readonly IProductService _productService;
+        private readonly IProductServices  _productService;
         public FrmProduct()
         {
             InitializeComponent();
