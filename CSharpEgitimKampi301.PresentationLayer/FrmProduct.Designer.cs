@@ -58,6 +58,7 @@
             btnId.TabIndex = 25;
             btnId.Text = "Id`ye Gore Getir";
             btnId.UseVisualStyleBackColor = true;
+            btnId.Click += btnId_Click;
             // 
             // btnUpdate
             // 
@@ -67,6 +68,7 @@
             btnUpdate.TabIndex = 24;
             btnUpdate.Text = "Guncelle";
             btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
             // btnDelete
             // 
@@ -86,6 +88,7 @@
             btnadd.TabIndex = 22;
             btnadd.Text = "Ekle";
             btnadd.UseVisualStyleBackColor = true;
+            btnadd.Click += btnadd_Click;
             // 
             // txtProductName
             // 
@@ -242,6 +245,7 @@
             Controls.Add(label1);
             Name = "FrmProduct";
             Text = "FrmProduct";
+            Load += FrmProduct_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -107,7 +107,7 @@
             // rdbActive
             // 
             rdbActive.AutoSize = true;
-            rdbActive.Location = new Point(194, 137);
+            rdbActive.Location = new Point(194, 139);
             rdbActive.Name = "rdbActive";
             rdbActive.Size = new Size(61, 24);
             rdbActive.TabIndex = 7;
@@ -118,7 +118,7 @@
             // rdbPassive
             // 
             rdbPassive.AutoSize = true;
-            rdbPassive.Location = new Point(194, 169);
+            rdbPassive.Location = new Point(279, 141);
             rdbPassive.Name = "rdbPassive";
             rdbPassive.Size = new Size(60, 24);
             rdbPassive.TabIndex = 8;
