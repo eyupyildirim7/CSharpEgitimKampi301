@@ -1,35 +1,35 @@
-# Lokasyon ve Rehber Yönetim Sistemi
+# Location and Directory Management System
 
-Bu proje, lokasyon ve rehber bilgilerini yönetmek için geliştirilmiş bir uygulamadır. **Entity Framework** kullanılarak veritabanı işlemleri gerçekleştirilmiş ve çeşitli istatistiksel bilgiler kullanıcı arayüzünde görüntülenmiştir.
-
----
-
-## Özellikler
-
-- **Lokasyon Sayısı**: Veritabanındaki toplam lokasyon sayısını gösterir.
-- **Toplam Kapasite**: Tüm lokasyonların kapasitelerinin toplamını hesaplar.
-- **Rehber Sayısı**: Sistemde kayıtlı rehber sayısını gösterir.
-- **Ortalama Kapasite**: Lokasyonların ortalama kapasitesini hesaplar.
-- **Ortalama Tur Fiyatı**: Lokasyonların ortalama tur fiyatını gösterir.
-- **Eklenen Son Ülke**: Veritabanına en son eklenen ülkeyi görüntüler.
-- **Kapadokya Tur Kapasitesi**: Kapadokya lokasyonunun kapasitesini gösterir.
-- **Türkiye Turları Ortalama Kapasite**: Türkiye'deki lokasyonların ortalama kapasitesini hesaplar.
-- **Roma Gezi Rehberi**: Roma lokasyonunun rehber bilgisini görüntüler.
-- **En Yüksek Kapasiteli Tur**: En yüksek kapasiteye sahip turu gösterir.
-- **En Pahalı Tur**: En yüksek fiyatlı turu görüntüler.
-- **Rehber Bazlı Tur Sayısı**: Belirli bir rehberin düzenlediği tur sayısını gösterir.
+This project is an application developed to manage location and directory information. Database operations were performed using **Entity Framework** and various statistical information was displayed on the user interface.
 
 ---
 
-## Teknik Detaylar
+## Features
 
-### Kullanılan Entity Framework Metotları
-- **Count()**:Veritabanı tablosundaki toplam kayıt sayısını döndürür.
-- **Sum()**: Belirli bir sütundaki değerlerin toplamını hesaplar.
-- **Average()**: Belirli bir sütundaki değerlerin ortalamasını hesaplar.
-- **Max()**: Belirli bir sütundaki en büyük değeri bulur.
-- **Where()**:  Belirli bir koşula uyan kayıtları filtreler.
-- **Select()**: Belirli sütunları veya özellikleri projeksiyon yaparak seçer.
+- **Number of Locations**: Shows the total number of locations in the database.
+- **Total Capacity**: Calculates the sum of the capacities of all locations.
+- Number of Guides**: Shows the number of guides registered in the system.
+- Average Capacity**: Calculates the average capacity of the locations.
+- **Average Tour Price**: Shows the average tour price of the locations.
+- Last Country Added**: Displays the last country added to the database.
+- **Cappadocia Tour Capacity**: Shows the capacity of the Cappadocia location.
+- **Turkey Tours Average Capacity**: Calculates the average capacity of locations in Turkey.
+- **Rome Travel Guide**: Displays the guide information of the Rome location.
+- **Highest Capacity Tour**: Shows the tour with the highest capacity.
+- **Most Expensive Tour**: Displays the tour with the highest price.
+- Number of Tours by Guide**: Displays the number of tours organized by a specific guide.
+
+---
+
+## Technical Details
+
+### Entity Framework Methods Used
+- **Count()**: Returns the total number of records in the database table.
+- **Sum()**: Calculates the sum of the values in a given column.
+- **Average()**: Calculates the average of the values in a given column.
+- **Max()**: Finds the maximum value in a given column.
+- **Where()**:  Filters records that match a given condition.
+- **Select()**: Selects specific columns or features by projection.
 
 
 
